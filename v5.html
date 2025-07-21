@@ -1,53 +1,179 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Página Pixel Art</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: "Courier New", Courier, monospace;
+      background-color: #f0f0f0;
+      color: #333;
+      line-height: 1.6;
+    }
+
+    header {
+      background-color: #1e1e1e;
+      color: #fff;
+      text-align: center;
+      padding: 40px 20px;
+    }
+
+    header img {
+      width: 64px;
+      height: 64px;
+      image-rendering: pixelated;
+      margin-bottom: 10px;
+    }
+
+    nav {
+      background-color: #333;
+      padding: 10px 0;
+    }
+
+    nav ul {
+      list-style: none;
+      text-align: center;
+    }
+
+    nav ul li {
+      display: inline-block;
+      margin: 0 20px;
+    }
+
+    nav ul li a {
+      color: #fff;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    nav ul li a:hover {
+      text-decoration: underline;
+    }
+
+    article {
+      background-color: white;
+      max-width: 800px;
+      margin: 30px auto;
+      padding: 30px;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+
+    .date {
+      font-size: 0.9em;
+      color: #999;
+    }
+
+    #articleHeader h2 {
+      color: #1e1e1e;
+      margin-top: 10px;
+    }
+
+    .content img {
+      width: 128px;
+      height: 128px;
+      image-rendering: pixelated;
+      float: right;
+      margin: 10px;
+    }
+
+    .content p {
+      margin-top: 20px;
+    }
+
+    .comments {
+      margin-top: 30px;
+      font-style: italic;
+    }
+
+    .comments a {
+      color: #005fa3;
+      text-decoration: none;
+    }
+
+    aside {
+      max-width: 800px;
+      margin: 20px auto;
+      padding: 20px;
+      background-color: #d9e9f9;
+      border-left: 4px solid #4aa3df;
+      border-radius: 5px;
+    }
+
+    .related {
+      margin-bottom: 15px;
+    }
+
+    .related img {
+      width: 48px;
+      height: 48px;
+      image-rendering: pixelated;
+      margin-right: 10px;
+      vertical-align: middle;
+    }
+
+    footer {
+      background-color: #1e1e1e;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      margin-top: 30px;
+    }
+  </style>
 </head>
 <body>
-	
-    <header>
-        <h1>Página web en HTML 5</h1>
-        <h3>Esta página web está escrita en HTML 5.</h3>
-    </header>
-	
-    <nav>
-        <ul>
-			<li><a href="#">Enlace 1</a></li>
-            <li><a href="#">Enlace 2</a></li>
-            <li><a href="#">Enlace 3</a></li>
-        </ul>
-    </nav>
-	
-	<article>
-		<section id="articleHeader">
-			<p class="date">03, Febrero de 2020</p>
-        	<h2>Título del artículo</h2>
-		</section>
-		
-		<section class="content">
-        	<p>Este es el contido del artículo</p>
-		</section>
-            
-		<section class="comments">
-			<p><a href="#">8 comentarios</a></p>
-		</section>	
-	</article>
-	
-    <aside>
-        <div class="related">
-			<p>Contenido relacionado indirectamente.</p>
-		</div>
-		
-		<div class="related">
-			<p>Contenido relacionado indirectamente.</p>
-		</div>
-    </aside>
-	
-    <footer>
-        <p>Aquí va el contenido del pie de página.</p>
-    </footer>
-	
+
+  <header>
+    <img src="https://www.pngmart.com/files/22/Pixel-Art-Computer-PNG.png" alt="Logo Pixel" />
+    <h1>Página web en HTML 5</h1>
+    <h3>Esta página web está escrita en HTML 5.</h3>
+  </header>
+
+  <nav>
+    <ul>
+      <li><a href="#">Enlace 1</a></li>
+      <li><a href="#">Enlace 2</a></li>
+      <li><a href="#">Enlace 3</a></li>
+    </ul>
+  </nav>
+
+  <article>
+    <section id="articleHeader">
+      <p class="date">03, Febrero de 2020</p>
+      <h2>Título del artículo</h2>
+    </section>
+
+    <section class="content">
+      <img src="https://i.pinimg.com/originals/59/39/bd/5939bdcbf3d4896e6d28ac19f9ae1b9b.png" alt="Decoración pixel" />
+      <p>Este es el contenido del artículo. Se muestra una imagen estilo pixel art al costado para darle un toque retro y creativo a la página web.</p>
+    </section>
+
+    <section class="comments">
+      <p><a href="#">8 comentarios</a></p>
+    </section>
+  </article>
+
+  <aside>
+    <div class="related">
+      <img src="https://www.pngmart.com/files/22/Pixel-Art-Star-PNG.png" alt="Pixel Item" />
+      <span>Contenido relacionado indirectamente.</span>
+    </div>
+    <div class="related">
+      <img src="https://www.pngmart.com/files/22/Pixel-Art-Smile-PNG.png" alt="Pixel Item" />
+      <span>Contenido relacionado indirectamente.</span>
+    </div>
+  </aside>
+
+  <footer>
+    <p>Aquí va el contenido del pie de página.</p>
+  </footer>
+
 </body>
 </html>
